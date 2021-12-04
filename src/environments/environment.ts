@@ -1,4 +1,5 @@
 export const environment = {
   production: false,
-  host: 'https://xkcd.com/'
+  proxy: 'http://localhost:3000',
+  host: 'https://xkcd.com'
 };

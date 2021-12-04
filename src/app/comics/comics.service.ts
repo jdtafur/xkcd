@@ -12,17 +12,20 @@ export class ComicsService {
   host: string;
 
   constructor(protected http: HttpClient) {
-    this.host = `${environment.host}`;
+    this.host = `${environment.proxy}`;
   }
 
   getCurrentComic(): Observable<any>{
-    return this.http.get<any>( `/info.0.json`);
+    const options = {headers: {'Target-URL':'https://xkcd.com'}};
+    return this.http.get<any>( `${this.host}/info.0.json`, options);
   }
 
   getComicByNumber(num: number): Observable<any> | null {
 
     if( !!num ){
-      return this.http.get<any>( `/${num}/info.0.json`);
+      const options = {headers: {'Target-URL':'https://xkcd.com'}};
+
+      return this.http.get<any>( `${this.host}/${num}/info.0.json`, options);
     }
     return null;
   }
