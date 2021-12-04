@@ -1,0 +1,8 @@
+{
+  "/info.0.json/*": {
+    "target": "https://xkcd.com",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
