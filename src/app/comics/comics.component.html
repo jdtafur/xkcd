@@ -1,1 +1,9 @@
-<p>comics works!</p>
+<div class="head">
+  <h1>xkcd comics</h1>
+</div>
+<ng-container *ngIf="comic !== null">
+  <app-comic [comic]="comic"></app-comic>
+</ng-container>
+<ng-container *ngIf="comic === null">
+  <span>upps! no hemos encontrado ningun comic.</span>
+</ng-container>

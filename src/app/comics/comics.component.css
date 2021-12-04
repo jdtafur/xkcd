@@ -1,0 +1,15 @@
+.head{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #2C87BF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(44, 135, 191, 0.68);
+  background-color: #BBE8F2;
+}
+
+.head h1{
+  color: #2C87BF;
+}
