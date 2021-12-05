@@ -1,20 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.image {
-
-}
-
 .description {
-
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.description img{
+  width: 100%;
+  height: auto;
+}
+.description p{
+  text-align: center;
 }

@@ -1,5 +1,24 @@
-<div class="head">
-  <h1>xkcd comics</h1>
+<div>
+  <div class="head">
+    <h1>xkcd comics</h1>
+  </div>
+  <app-comic [comic]="comic"></app-comic>
+  <ul class="qualify" appQualify (selected)="onChangeSelected($event)" [(activeSelector)]="qualify">
+    <li appQualifyItem [selector]="qualifyStatus.LOW">
+      <span>Bajo</span>
+    </li>
+    <li appQualifyItem [selector]="qualifyStatus.MIDDLE">
+      <span>Medio</span>
+    </li>
+    <li appQualifyItem [selector]="qualifyStatus.HIGH">
+      <span>Alto</span>
+    </li>
+    <li appQualifyItem [selector]="qualifyStatus.THE_BEST">
+      <span>El mejor</span>
+    </li>
+  </ul>
+  <div class="button-container">
+    <button>Calificar</button>
+  </div>
 </div>
-<app-comic [comic]="comic"></app-comic>
 
