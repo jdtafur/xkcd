@@ -40,4 +40,8 @@ export class ComicsComponent implements OnInit {
   onChangeSelected(itemSelected: QualifyStatus): void {
     this.qualify = itemSelected;
   }
+
+  qualifyComic(): void{
+    console.log('Gracias por tomarte el tiempo de calificar este comic!');
+  }
 }
